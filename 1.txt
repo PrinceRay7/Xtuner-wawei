@@ -1,0 +1,9 @@
+**原文第2句：** "It reuses the large-scale pretrained layers of source models to build a deep and strong encoder to learn specific conditions."
+
+**详解：** 它复用源模型的大规模预训练层来构建一个深层且强大的编码器来学习特定条件。这总结了 ControlNet 的核心策略——不从零构建条件编码器，而是复用已有的预训练编码器。这种"站在巨人肩膀上"的策略使得 ControlNet 可以用很少的数据和计算资源就学会新的条件控制。
+
+---
+
+**原文第3句：** "The original model and trainable copy are connected via 'zero convolution' layers that eliminate harmful noise during training."
+
+**详解：** 原始模型和可训练副本通过"零卷积"层连接，这些层在训练过程中消除有害噪声。零卷积是 ControlNet 最关键的技术创新——它解决了"如何在不破坏预训练模型的情况下添加新功能"这个核心问题。
